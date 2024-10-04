@@ -30,9 +30,11 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/config.json"
+              "src/config.json",
+              "src/assets"
             ],
             "styles": [
+              "src/styles/reset/reset.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -90,9 +92,11 @@
                 "glob": "**/*",
                 "input": "public"
               },
-              "src/config.json"
+              "src/config.json",
+              "src/assets"
             ],
             "styles": [
+              "src/styles/reset/reset.scss",
               "src/styles.scss"
             ],
             "scripts": []
