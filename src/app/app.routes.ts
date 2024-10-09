@@ -1,18 +1,26 @@
-import {Routes} from '@angular/router';
+import {Route, Routes} from '@angular/router';
+
+const MinRoute: Route = {
+  children: [
+    {
+      path: '',
+      loadChildren: () => import('./features/features.routes').then(m => m.FeatureRoutes)
+    },
+  ]
+}
 
 export const routes: Routes = [
   {
     path: '',
-    children: [
-      {
-        path: '',
-        pathMatch: 'full',
-        redirectTo: 'app'
-      },
-      {
-        path: 'app',
-        loadChildren: () => import('./features/features.routes').then(m => m.FeatureRoutes)
-      }
-    ]
+    pathMatch: 'full',
+    redirectTo: 'ka',
+  },
+  {
+    path: 'ka',
+    ...MinRoute
+  },
+  {
+    path: 'en',
+    ...MinRoute
   }
 ];

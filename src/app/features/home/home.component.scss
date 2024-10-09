@@ -5,6 +5,8 @@
   min-width: 100%;
   min-height: 100%;
 
+  z-index: -1;
+
   object-fit: cover;
   object-position: center;
 }
@@ -13,9 +15,9 @@
   &:before {
     content: '';
     position: absolute;
+    z-index: 0;
     height: 100%;
     width: 100%;
-    z-index: 1;
     background: rgba(0, 0, 0, 0.6); //Change as per your requirement
   }
 }

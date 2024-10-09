@@ -1,9 +1,9 @@
 <div class="video-wrapper">
-  <video #video autoplay muted loop id="myVideo" (canplay)="video.play()">
+  <video [defaultMuted]="true" [muted]="true" [autoplay]="true" [loop]="true" playsinline id="myVideo">
     <source src="assets/videos/cover.mp4" type="video/mp4">
   </video>
 </div>
 
 <main class="content">
-
+  <app-nav-bar></app-nav-bar>
 </main>

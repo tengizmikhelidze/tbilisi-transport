@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <a class="navbar-brand" href="/">Brand</a>
+    <div>
+      <button (click)="switchTheme('light')">Light Theme</button>
+      <button (click)="switchTheme('dark')">Dark Theme</button>
+    </div>
+
+    <ul class="navbar-nav">
+      @for(item of navItems; track item) {
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="item.link">{{ item.name }}</a>
+        </li>
+      }
+    </ul>
+    <div class="language-switcher">
+      <a href="/en">ENG</a> / <a href="/ka">ქართ</a>
+    </div>
+  </div>
+</nav>

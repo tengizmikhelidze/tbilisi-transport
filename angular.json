@@ -37,6 +37,13 @@
               "src/styles/reset/reset.scss",
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles/palette/dark-palette.scss",
+                "src/styles/palette/light-palette.scss",
+                "src/styles/palette/theme.scss"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -99,6 +106,13 @@
               "src/styles/reset/reset.scss",
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles/palette/dark-palette.scss",
+                "src/styles/palette/light-palette.scss",
+                "src/styles/palette/theme.scss"
+              ]
+            },
             "scripts": []
           }
         }
