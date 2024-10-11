@@ -1,39 +1,28 @@
+@use "mixins";
+
 .navbar {
   background-color: var(--background-primary-initial);
-  padding: 1rem;
+  height: 60px;
+  padding: 0 1rem;
 
   .navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
   }
 
   .navbar-brand {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
-  }
+    height: 100%;
 
-  .navbar-nav {
-    list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
 
-    .nav-item {
-      margin-left: 1rem;
-
-      .nav-link {
-        color: #fff;
-        text-decoration: none;
-        font-size: 1rem;
-        transition: color 0.3s;
-
-        &:hover {
-          color: #ddd;
-        }
-      }
-    }
+    @include mixins.border-top-hover();
   }
 
   .language-switcher {
@@ -45,6 +34,41 @@
       &:hover {
         color: #ddd;
       }
+    }
+  }
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100%;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  .nav-item {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+
+    @include mixins.border-top-hover();
+
+    .nav-link {
+      color:  var(--link-color-initial);
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
     }
   }
 }

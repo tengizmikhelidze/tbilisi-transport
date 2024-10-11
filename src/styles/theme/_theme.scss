@@ -1,6 +1,6 @@
 @use "sass:map";
-@import '../palette/dark-palette';
-@import '../palette/light-palette';
+@import 'light-palette';
+@import 'dark-palette';
 
 $theme-map: (
   "light": (
@@ -8,14 +8,16 @@ $theme-map: (
     --color-secondary-initial: $color-secondary-initial__light,
     --background-primary-initial: $background-primary-initial__light,
     --background-secondary-initial: $background-secondary-initial__light,
-    --text-color-initial: $text-color-initial__light
+    --text-color-initial: $text-color-initial__light,
+    --link-color-initial: $link-color-initial__light
   ),
   "dark": (
     --color-primary-initial: $color-primary-initial__dark,
     --color-secondary-initial: $color-secondary-initial__dark,
     --background-primary-initial: $background-primary-initial__dark,
     --background-secondary-initial: $background-secondary-initial__dark,
-    --text-color-initial: $text-color-initial__dark
+    --text-color-initial: $text-color-initial__dark,
+    --link-color-initial: $link-color-initial__dark
   )
 );
 

@@ -39,9 +39,10 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles/palette/dark-palette.scss",
-                "src/styles/palette/light-palette.scss",
-                "src/styles/palette/theme.scss"
+                "src/styles/palette",
+                "src/styles/palette",
+                "src/styles/mixins",
+                "src/styles/animations"
               ]
             },
             "scripts": []
@@ -108,9 +109,10 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles/palette/dark-palette.scss",
-                "src/styles/palette/light-palette.scss",
-                "src/styles/palette/theme.scss"
+                "src/styles/palette",
+                "src/styles/palette",
+                "src/styles/mixins",
+                "src/styles/animations"
               ]
             },
             "scripts": []

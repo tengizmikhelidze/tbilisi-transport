@@ -28,11 +28,11 @@ export class NavBarComponent implements OnInit {
   setDefaultTheme() {
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
     this.currentTheme = prefersDarkScheme ? 'dark' : 'light';
-    document.body.className = this.currentTheme;
+    document.body.setAttribute('data-theme', this.currentTheme);
   }
 
   switchTheme(theme: string) {
     this.currentTheme = theme;
-    document.body.className = theme;
+    document.body.setAttribute('data-theme', theme);
   }
 }
